@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup page</title>
+</head>
+<body>
+  <h1>welcome to signup page</h1>
+  <%- include("partials/nav")%>
+
+
+  <form action="/signup" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="email" name="email" placeholder="email">
+    <input type="passwordt" name="password" placeholder="password">
+    <button>signup</button>
+    <a href="/signin">signin</a>
+    
+  </form>
+
+  
+
+  
+</body>
+</html>

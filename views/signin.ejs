@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signin page</title>
+</head>
+<body>
+  <h1>welcome to signin page</h1>
+
+  <%- include("partials/nav")%>
+
+
+
+  <form action="/signin" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>signin</button>
+
+    <a href="/forget">forget password ?</a>
+    
+  </form>
+
+  
+
+  
+</body>
+</html>

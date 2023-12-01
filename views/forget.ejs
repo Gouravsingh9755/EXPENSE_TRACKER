@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forget Page</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        height: 350px;
+        width: 40%;
+        /* border: 5px solid red;
+      background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .forms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .back-arrow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate();
+        font-size: 35px;
+      }
+
+      a {
+        color: rgb(48, 25, 52);
+      }
+
+      @media (max-width: 730px) {
+
+      .container{
+        width: 100%;
+      }
+
+      .back-arrow{
+        top: -6%;
+        left: -10%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="flip" />
+
+      <div class="forms">
+        <div class="form-content">
+          <!-- <div class="forget-form"> -->
+          <!-- FORGET FORM -->
+          <!-- FORGET FORM -->
+          <a href="/"><i class="ri-arrow-left-circle-fill back-arrow"></i></a>
+          <form action="/sendmail" method="post">
+            <div class="title">Recover account?</div>
+
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Registered Email"
+                  required
+                />
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Send Mail" />
+              </div>
+            </div>
+          </form>
+          <!-- FORGET FORM -->
+          <!-- FORGET FORM -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
